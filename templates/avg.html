@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to the weather app :)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+</head>
+
+<body>
+    <section class="hero is-link">
+        <div class="hero-body">
+            <div class="container">
+                    <div class="columns is-centered">
+                        <h1 class="title">
+                           The average temperature in the last 5 days is: {{ temp_avg }} F
+                        </h1>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="back">
+                    <a href="{{ url_for('index') }}"
+                        <button class="button is-info">
+                            Back to weather page
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </section> 
+</body>
+</html>
